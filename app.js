@@ -1,6 +1,10 @@
 const express = require('express')
 const { engine } = require('express-handlebars')
 
+const homeController = require('./controller/home.controller')
+
+const aboutController = require('./controller/about.controller')
+
 const app = express();
 const port = 8080;
 
@@ -25,6 +29,10 @@ app.set('view engine', 'handlebars');
 app.set('views', './views');
 
 app.use(express.static(`${__dirname}/publico`));
+
+app.get('/', homeController.home);
+
+app.get('/about', aboutController.about);
 
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port} (Graças a Deus!)`);

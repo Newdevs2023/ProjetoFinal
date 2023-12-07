@@ -1,0 +1,25 @@
+{{#section 'styles'}}
+<link rel="stylesheet" href="css/home.css">
+{{/section}}
+
+<h1>Página Home</h1>
+
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Lanche</td>
+            <td>Descrição</td>
+            <td>Preço</td>
+        </tr>
+    </thead>
+
+    {{#each dados }}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{Lanche}}</td>
+            <td>{{descricao}}</td>
+            <td>{{preco}}</td>
+        </tr>
+    {{/each}}
+</table>
