@@ -1,0 +1,26 @@
+{{#section 'styles'}}
+<link rel="stylesheet" href="css/contato.css">
+{{/section}}
+
+<h1>Cadastro do Produto</h1>
+
+<form action="salvaContato" method="post">
+        <!-- Campo Nome -->
+        <label for="nome_lache">Lanche: </label>
+        <input type="text" id="nome_lache" name="nome_lache" placeholder="X Burguer" required>
+
+        <!-- descricao_lanche -->
+        <label for="descricao_lanche">Descrição:</label>
+        <input type="text" id="descricao_lanche" name="descricao_lanche" placeholder="Pão de hamburguer, 100g Hamburguer, tomate, queijo" required>
+
+        <!-- Preço -->
+        <label for="preco">Preço: R$</label>
+        <input type="text" id="preco" name="preco" placeholder="25.00" required>
+
+        <!-- imagem -->
+        <label for="imagem">Imagem</label>
+        <img src="" alt="">
+
+        <!-- Botão de Cadastro -->
+        <button type="submit">Cadastrar</button>
+    </form>
