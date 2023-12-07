@@ -5,6 +5,8 @@ const homeController = require('./controller/home.controller')
 
 const aboutController = require('./controller/about.controller')
 
+const cadastrarController = require('./controller/cadastrar.controller')
+
 const app = express();
 const port = 8080;
 
@@ -33,6 +35,8 @@ app.use(express.static(`${__dirname}/publico`));
 app.get('/', homeController.home);
 
 app.get('/about', aboutController.about);
+
+app.get('/cadastrar', cadastrarController.cadastrar);
 
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port} (Graças a Deus!)`);
