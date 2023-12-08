@@ -1,6 +1,6 @@
 const crud = require('../models/crud');
 
-const filePath = './data/db.contatos.json';
+const filePath = './data/db.cadastro.json';
 
 const home = (req, res) => {
     let lanche = crud.read(filePath);
