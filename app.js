@@ -7,6 +7,10 @@ const aboutController = require('./controller/about.controller')
 
 const cadastroController = require('./controller/cadastro.controller')
 
+const loginController = require('./controller/login.controller')
+
+const acoesAdmController = require('./controller/acoesAdm.Controller');
+
 const app = express();
 const port = 8080;
 
@@ -37,6 +41,12 @@ app.get('/', homeController.home);
 app.get('/about', aboutController.about);
 
 app.get('/cadastro', cadastroController.cadastro);
+
+app.get('/login', loginController.login );
+
+app.post('/loginEntrar', loginController.loginEntrar);
+
+app.get('/acoesAdm', acoesAdmController.acoesAdm);
 
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port} (Graças a Deus!)`);
