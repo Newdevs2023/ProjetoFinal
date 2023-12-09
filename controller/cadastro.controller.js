@@ -15,7 +15,7 @@ const salvaContato = (req, res) => {
     if (cadastro.id > 0){
         crud.create(cadastro, filePath);
     }else {
-        console.log("Ocorreu um erro!");
+        console.log("Ocorreu um erro!catapimbas");
     }
     res.redirect('/');
 }
