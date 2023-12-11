@@ -3,7 +3,7 @@ class Produto {
         this.id = i.id;
         this.lanche = i.lanche;
         this.descricao = i.descricao;
-        this.senha = i.preco;
+        this.preco = i.preco;
     }
 }
 

@@ -42,6 +42,8 @@ app.get('/about', aboutController.about);
 
 app.get('/cadastro', cadastroController.cadastro);
 
+app.post('/salvarContato', cadastroController.salvarContato);
+
 app.get('/login', loginController.login );
 
 app.post('/loginEntrar', loginController.loginEntrar);
