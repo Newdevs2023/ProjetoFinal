@@ -7,11 +7,11 @@
 <form action="salvaContato" method="post">
         <!-- Campo Nome -->
         <label for="nome_lache">Lanche: </label>
-        <input type="text" id="nome_lache" name="nome_lache" placeholder="X Burguer" required>
+        <input type="text" id="nome_lache" name="lache" placeholder="X Burguer" required>
 
         <!-- descricao_lanche -->
         <label for="descricao_lanche">Descrição:</label>
-        <input type="text" id="descricao_lanche" name="descricao_lanche" placeholder="Pão de hamburguer, 100g Hamburguer, tomate, queijo" required>
+        <input type="text" id="descricao_lanche" name="descricao" placeholder="Pão de hamburguer, 100g Hamburguer, tomate, queijo" required>
 
         <!-- Preço -->
         <label for="preco">Preço: R$</label>
@@ -19,8 +19,8 @@
 
         <!-- imagem -->
         <label for="imagem">Imagem</label>
-        <img src="../publico/img/${}.jpg" alt="" width="60px" height="60px">
+        <img src="../publico/img/${}.jpg" alt="" width="60px" height="60px" nome="img">
 
         <!-- Botão de Cadastro -->
-        <button type="submit">Cadastrar</button>
+        <button>Cadastrar</button>
     </form>

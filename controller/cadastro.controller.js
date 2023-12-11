@@ -1,23 +1,22 @@
-const Cadastro = require('../models/cadastro.model');
-// const conMysql = require('../dao/connection.database');
+const Produto = require('../models/Cadastro.model');
+
 const crud = require('../models/crud');
 
 const cadastro = (req, res) => {
     res.render('cadastro');
 }
+const filePath = './data/db.cadastro.json';
 
-const filePath = "./data/db.cadastro.json";
-const salvaContato = (req, res) => {
-    let cadastro = new Cadastro(req.body);
-
+const salvarContato = (req, res) => {
+    let cliente = new Produto(req.body);
     crud.read(filePath);
-    cadastro.id = crud.verificaId();
-    if (cadastro.id > 0){
-        crud.create(cadastro, filePath);
-    }else {
-        console.log("Ocorreu um erro!");
+    cliente.id = crud.verificaId();
+    if (cliente.id > 0) {
+        crud.create(cliente, filePath);
+    }else{
+        console.log('Ocorreu um erro!');
     }
     res.redirect('/');
 }
 
-module.exports = {cadastro, salvaContato};
+module.exports = {cadastro, salvarContato };

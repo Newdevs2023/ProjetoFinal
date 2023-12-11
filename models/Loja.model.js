@@ -1,14 +1,14 @@
 class LojaVirtual {
-    constructor() {
+    constructor(i) {
         if (new.target === LojaVirtual) {
             throw new TypeError('Cannot create an instance of the abstract class');
         }
-        this.lanche = [];
+        this.lanche = i.lanche;
+        this.id = i.id;
+        this.descricao = i.descricao;
+        this.preco = i.preco;
         this._carrinho = [];
-    }
 
-    cadastrarProduto(produto) {
-        this.lanche.push(produto);
     }
 
     get carrinho() {
@@ -32,12 +32,6 @@ class LojaVirtual {
         const descontoAplicado = valorTotal * (desconto / 100);
         return valorTotal - descontoAplicado;
     }
-
-    verificaId(){
-        if(this.myData.length > 0){
-            let idMaximo = crud.myData.at(-1).id;
-            return ++idMaximo;
-        }
-        return 1;
-    }
 }
+
+module.exports = LojaVirtual;

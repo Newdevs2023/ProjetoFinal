@@ -1,19 +1,18 @@
-// const { json } = require('body-parser');
 const fs = require('fs');
 
 const crud = {
     myData: [],
-    read(filePath){
-        if(fs.existsSync(filePath)){
-            this.myData = JSON.parse(fs.readFileSync(filePath, {encoding: 'utf-8'}));
+    read(filePath) {
+        if (fs.existsSync(filePath)) {
+            this.myData = JSON.parse(fs.readFileSync(filePath, { encoding: 'utf-8' }));
             return crud.myData;
+            
         }
     },
-    create(obj, filePath){
+    create(obj, filePath) {
         this.myData.push(obj);
-        fs.writeFileSync(filePath, JSON.stringify(crud.myData), {encoding: 'utf-8'});
+        fs.writeFileSync(filePath, JSON.stringify(crud.myData), { encoding: 'utf-8' });
     },
-
     verificaId(){
         if(this.myData.length > 0){
             let idMaximo = crud.myData.at(-1).id;
