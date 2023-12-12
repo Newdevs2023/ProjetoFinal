@@ -9,7 +9,7 @@ const cadastroController = require('./controller/cadastro.controller')
 
 const loginController = require('./controller/login.controller')
 
-const acoesAdmController = require('./controller/acoesAdm.Controller');
+const acoesAdmController = require('./controller/acoesAdm.controller');
 
 const app = express();
 const port = 8080;
@@ -44,11 +44,19 @@ app.get('/cadastro', cadastroController.cadastro);
 
 app.post('/salvarContato', cadastroController.salvarContato);
 
-app.get('/login', loginController.login );
+app.get('/login', loginController.login);
 
 app.post('/loginEntrar', loginController.loginEntrar);
 
 app.get('/acoesAdm', acoesAdmController.acoesAdm);
+
+app.get('/produto/excluir/:id', acoesAdmController.excluirProduto);
+
+app.post('/produto/editar/salvaEdtProduto', acoesAdmController.salvaEdtProduto);
+
+app.get('/produto/editar/:id', acoesAdmController.editarProduto);
+
+
 
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port} (Graças a Deus!)`);
