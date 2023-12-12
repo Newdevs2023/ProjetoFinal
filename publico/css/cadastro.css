@@ -86,9 +86,10 @@ a {
 }
 
 table {
-    margin-left: 42%;
+    margin-left: 36%;
     box-shadow: rgb(172, 168, 168);
-    width: 15%;
+    width: 30%;
+    margin-top: 5%;
 }
 
 

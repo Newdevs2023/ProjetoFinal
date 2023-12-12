@@ -50,6 +50,13 @@ app.post('/loginEntrar', loginController.loginEntrar);
 
 app.get('/acoesAdm', acoesAdmController.acoesAdm);
 
+app.post('/cadastrar', acoesAdmController.cadastrar);
+
+app.post('/procurar', acoesAdmController.procurar);
+
+app.post('/deletar', acoesAdmController.deletar);
+
+
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port} (Graças a Deus!)`);
 });
