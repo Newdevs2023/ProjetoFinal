@@ -21,3 +21,13 @@ header{
     height: auto;
     width: 30%;
 }
+
+table{
+    margin-top:1%;
+    margin-left: 35%;
+}
+
+table td {
+    border: 1px solid black;
+    white-space: nowrap;
+}
