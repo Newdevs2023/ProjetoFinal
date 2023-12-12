@@ -16,7 +16,7 @@ const salvarContato = (req, res) => {
     }else{
         console.log('Ocorreu um erro!');
     }
-    res.redirect('/');
+    res.redirect('/acoesAdm');
 }
 
 module.exports = {cadastro, salvarContato };
