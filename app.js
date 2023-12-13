@@ -5,11 +5,11 @@ const homeController = require('./controller/home.controller')
 
 const aboutController = require('./controller/about.controller')
 
-const cadastroController = require('./controller/cadastro.controller')
-
 const loginController = require('./controller/login.controller')
 
 const acoesAdmController = require('./controller/acoesAdm.controller');
+
+const acoesUserController = require('./controller/acoesUser.controller');
 
 const app = express();
 const port = 8080;
@@ -40,9 +40,9 @@ app.get('/', homeController.home);
 
 app.get('/about', aboutController.about);
 
-app.get('/cadastro', cadastroController.cadastro);
+app.get('/cadastro', acoesAdmController.cadastro);
 
-app.post('/salvarContato', cadastroController.salvarContato);
+app.post('/salvarContato', acoesAdmController.salvarProduto);
 
 app.get('/login', loginController.login);
 
@@ -55,6 +55,10 @@ app.get('/produto/excluir/:id', acoesAdmController.excluirProduto);
 app.post('/produto/editar/salvaEdtProduto', acoesAdmController.salvaEdtProduto);
 
 app.get('/produto/editar/:id', acoesAdmController.editarProduto);
+
+
+app.get('/compras/')
+
 
 
 

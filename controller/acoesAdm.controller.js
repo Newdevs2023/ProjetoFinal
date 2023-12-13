@@ -26,4 +26,20 @@ const salvaEdtProduto = (req, res) => {
     res.redirect('/acoesAdm');
 }
 
-module.exports = { acoesAdm, excluirProduto, editarProduto , salvaEdtProduto };  
+const cadastro = (req, res) => {
+    res.render('cadastro');
+}
+
+const salvarProduto = (req, res) => {
+    let cliente = new Produto(req.body);
+    crud.read(filePath);
+    cliente.id = crud.verificaId();
+    if (cliente.id > 0) {
+        crud.create(cliente, filePath);
+    }else{
+        console.log('Ocorreu um erro!');
+    }
+    res.redirect('/acoesAdm');
+}
+
+module.exports = { acoesAdm, excluirProduto, editarProduto , salvaEdtProduto, cadastro, salvarProduto};  
