@@ -44,6 +44,12 @@ const crud = {
         crud.read(filePath);
         let el = this.myData.find((element) => element.id == id);
         return el;
+    },
+
+    calcularValor(obj, filePath){
+        this.myData.pull(obj);
+        
+        fs.writeFileSync(filePath, JSON.stringify(crud.myData), { encoding: 'utf-8' });
     }
 }
 
