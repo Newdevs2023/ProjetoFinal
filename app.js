@@ -11,6 +11,8 @@ const acoesAdmController = require('./controller/acoesAdm.controller');
 
 const acoesUserController = require('./controller/acoesUser.controller');
 
+const cadastroUserController = require('./controller/cadastroUser.controller');
+
 const app = express();
 const port = 8080;
 
@@ -42,7 +44,7 @@ app.get('/about', aboutController.about);
 
 app.get('/cadastro', acoesAdmController.cadastro);
 
-app.post('/salvarContato', acoesAdmController.salvarProduto);
+app.post('/salvarProduto', acoesAdmController.salvarProduto);
 
 app.get('/login', loginController.login);
 
@@ -56,8 +58,11 @@ app.post('/produto/editar/salvaEdtProduto', acoesAdmController.salvaEdtProduto);
 
 app.get('/produto/editar/:id', acoesAdmController.editarProduto);
 
+app.get('/cadastroUser', cadastroUserController.cadastroUser);
 
-app.get('/compras/')
+app.post('/salvarContato', cadastroUserController.salvarContato);
+
+// app.get('/compras/')
 
 
 
