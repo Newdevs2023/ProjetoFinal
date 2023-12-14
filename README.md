@@ -1,6 +1,6 @@
 <center>
 
-![Logo](./publico/img/logo-header.png)
+![Logo](./publico/img/menuBurguer.png)
 
 </center>
 
