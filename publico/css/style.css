@@ -5,56 +5,76 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-
-.logo{
+/* Configuração da Logo Header */
+.logo {
     position: relative;
-    top: 10px ;
+    top: 5px;
     height: 25%;
     width: 25%;
+    left: 10%;
 }
 
-#logo{
+#logo {
     cursor: pointer;
     position: relative;
     height: auto;
     width: 30%;
+    opacity: 0.7;
 }
 
-header{
+
+/* Configuração de Cabeçalho */
+header {
     height: 20%;
-    background-image: url(../img/img-header.png);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(145deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(79, 0, 0, 0.6) 36%, rgba(0, 8, 73, 0.6) 67%, rgba(0, 0, 0, 1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: initial;
 }
 
-.menu-header{
+/* Configuração de links do Header (HOME, SOBRE, LOGIN ETC...) */
+.menu-header {
+    right: 3%;
     bottom: 40px;
     float: right;
     position: relative;
-    width: 40%;
+    width: 60%;
 }
 
-.menu-header a{
-    font-size: 25px;
+.menu-header a {
+    font-size: 20px;
     align-items: center;
     color: white;
     text-decoration: none;
     float: right;
     padding-left: 2px;
-    margin-right: 95px;
+    margin-right: 50px;
 }
 
-footer {
+/* Corpo - Body */
+body {
+    position: initial;
     background-color: black;
-    border: 3px solid black;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+main {
+    border: 1px solid red;
+
+}
+
+/* Rodapé */
+footer {
+
+    background: rgb(0, 0, 0);
+    background: linear-gradient(145deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(79, 0, 0, 0.6) 36%, rgba(0, 8, 73, 0.6) 67%, rgba(0, 0, 0, 1) 100%);
     height: 10%;
     text-align: center;
     color: white;
-    /* font-weight: bold; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,11 +83,4 @@ footer {
     left: 0;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
-
 }
-
-main {
-    height: 80%;
-    text-align: center;
-}
-
