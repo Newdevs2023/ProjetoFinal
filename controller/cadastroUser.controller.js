@@ -19,4 +19,5 @@ const salvarContato = (req, res) => {
     res.redirect('/');
 }
 
-module.exports = { cadastroUser, salvarContato };
+
+module.exports = { cadastroUser, salvarContato};
