@@ -27,7 +27,7 @@
 
 /* Configuração de Cabeçalho */
 header {
-    padding-top: 30%;
+    padding-top: 2px;
     background: rgb(0, 0, 0);
     background: linear-gradient(145deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(79, 0, 0, 0.6) 36%, rgba(0, 8, 73, 0.6) 67%, rgba(0, 0, 0, 1) 100%);
     background-repeat: no-repeat;
@@ -46,11 +46,6 @@ header {
 
 }
 
-header{ 
-    background-image: url('../img/family.png');
-    background-size: cover; /* para cobrir todo o fundo */
-    background-attachment: fixed; /* para manter a imagem fixa enquanto a página rola */
-}
 
 .menu-header a {
     font-size: 20px;

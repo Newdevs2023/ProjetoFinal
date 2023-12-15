@@ -1,0 +1,21 @@
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Lanche</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    {{#each dados }}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{lanche}}</td>
+            <td>{{descricao}}</td>
+            <td>{{preco}}</td>
+            <td><a method="get" href="/produto/editar/{{id}}"><input type="button" value="editar"></a><a method="get" href="/produto/excluir/{{id}}"><input type="button" value="Excluir"></a></td>
+        </tr>
+    {{/each}}
+</table>
