@@ -8,7 +8,50 @@
 
 }
 
-main {
-    height: 80%;
+
+/* Estilos para o layout básico */
+
+ 
+  
+  main {
+    padding: 20px;
+  }
+  
+  
+  /* Estilos para os produtos */
+  .produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .produto {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
     text-align: center;
-}
+  }
+  
+  .produto img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3px;
+  }
+  
+  .produto h2 {
+    font-size: 1.5em;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
