@@ -30,12 +30,6 @@ const cadastro = (req, res) => {
     res.render('cadastro');
 }
 
-
-const leitura = (req, res) => {
-    let lanche = crud.read(filePath);
-    res.render('acoesAdm', { dados: lanche });
-}
-
 const salvarProduto = (req, res) => {
     let cliente = new Produto(req.body);
     crud.read(filePath);
@@ -48,4 +42,4 @@ const salvarProduto = (req, res) => {
     res.redirect('/acoesAdm');
 }
 
-module.exports = { acoesAdm, excluirProduto, editarProduto , salvaEdtProduto, cadastro, salvarProduto, leitura};  
+module.exports = { acoesAdm, excluirProduto, editarProduto , salvaEdtProduto, cadastro, salvarProduto};  
