@@ -4,8 +4,9 @@
 
 
 <div class="table">
-    <h3>Cadastros de Usuários</h3>
-    <table id="table">
+    <h1>Cadastros de Usuários</h1>
+    <br><br>
+    <table id="table" border="2">
     <thead>
         <tr>
             <td class="id">ID</td>
@@ -22,11 +23,9 @@
             <td>{{nome}}</td>
             <td>{{email}}</td>
             <td>{{senha}}</td>
-            <td><a method="get" href="/usuarios/editar/{{id}}"><input type="button" value="editar"></a><a method="get" href="/usuarios/excluir/{{id}}"><input type="button" value="Excluir"></a></td>
+            <td><a method="get" href="/usuarios/editar/{{id}}"><input type="button" class="button" id="editar" value="editar"></a><a method="get" href="/usuarios/excluir/{{id}}"><input type="button" class="button" id="excluir" value="Excluir"></a></td>
         </tr>
     {{/each}}
 </table>
 <a method="get" href="/acoesAdm"><input class="button" id="voltar" type="button" value="Voltar"></a>
 </div>
-
-

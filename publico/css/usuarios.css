@@ -3,46 +3,54 @@ table {
     align-items: center;
     text-align: center;
     width: auto;
+    height: 0 auto;
     justify-content: center;
 }
 
-h3{
-    align-items: center;
+h1{
+    position: relative;
+    left: 250px;
+}
+
+td{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .table {
     position: relative;
     width: max-content;
-    left: 20%;
+    left: 15%;
+    top: 20vh;
 }
 
 .id {
     padding: 10px;
-    border-bottom: 1px white solid;
+
 }
 
 .nome {
-    border-bottom: 1px white solid;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 .email{
-    border-bottom: 1px white solid;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 .senha{
-    border-bottom: 1px white solid;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 .button{
@@ -88,17 +96,17 @@ h3{
     background-color: rgb(116, 1, 1);
     text-decoration: overline;
     border-radius: 7px;
-    transform-style: preserve-3d;
-    
 }
 
 #voltar{
+    position: relative;
     background-color: rgb(92, 92, 92);
     color: white;
     border: none;
-    border-bottom: none;
     border-radius: 2px;
     cursor: pointer;
+    width: 150px;
+    left: 623px;
 }
 
 #voltar:hover {
