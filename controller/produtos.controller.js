@@ -1,5 +1,6 @@
-const crud = require('../models/crud')
+const crud = require('../models/crud');
 const filePath = './data/db.cadastro.json';
+const Produto = require('../models/Cadastro.model')
 
 const produtos = (req, res) => {
     let produtos = crud.read(filePath);

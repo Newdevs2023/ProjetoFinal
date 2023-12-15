@@ -8,7 +8,7 @@ const acoesAdm = (req, res) => {
 }
 
 const salvarProduto = (req, res) => {
-    let cliente = new Cliente(req.body);
+    let cliente = new Produto(req.body);
     crud.read(filePath);
     cliente.id = crud.verificaId();
     if (cliente.id > 0) {
