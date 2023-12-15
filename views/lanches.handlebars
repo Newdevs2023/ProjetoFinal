@@ -5,7 +5,6 @@
 <table>
     <thead>
         <tr>
-            <th>ID</th>
             <th>Lanche</th>
             <th>Descrição</th>
             <th>Preço</th>
@@ -15,13 +14,12 @@
 
     {{#each dados }}
         <tr>
-            <td>{{id}}</td>
             <td>{{lanche}}</td>
             <td>{{descricao}}</td>
             <td>{{preco}}</td>
-            <td><a method="get" href="/produtos/editar/{{id}}"><input type="button" value="editar"></a><a method="get" href="/produtos/excluir/{{id}}"><input type="button" value="Excluir"></a></td>
+            <td><a method="post" href="/lanches/addCarrinho/{{id}}"><input type="button" value="addCarrinho"></a></td>
         </tr>
     {{/each}}
 </table>
 
-<a method="get" href="/acoesAdm"><input type="button" value="Voltar"></a>
+<a method="get" href="/"><input type="button" value="Voltar"></a>

@@ -23,6 +23,8 @@ const pedidosController = require("./controller/pedidos.controller")
 
 const pagamentoController = require ("./controller/pagamentos.controller");
 
+const lancheController = require ("./controller/lanche.controller");
+
 const app = express();
 const port = 8080;
 
@@ -62,11 +64,11 @@ app.get('/acoesAdm', acoesAdmController.acoesAdm);
 
 app.get('/cadastro', acoesAdmController.cadastro);
 
-app.get('/produto/excluir/:id', acoesAdmController.excluirProduto);
+app.get('/produtos/excluir/:id', produtosController.excluirProduto);
 
-app.post('/produto/editar/salvaEdtProduto', acoesAdmController.salvaEdtProduto);
+app.post('/produtos/editar/salvaEdtProduto', produtosController.salvaEdtProduto);
 
-app.get('/produto/editar/:id', acoesAdmController.editarProduto);
+app.get('/produtos/editar/:id', produtosController.editarProduto);
 
 app.get('/cadastroUser', cadastroUserController.cadastroUser);
 
@@ -76,7 +78,7 @@ app.get('/produtos', produtosController.produtos);
 
 app.get('/produtos/excluir/:id', produtosController.excluirProduto);
 
-app.post('/produtos/addCarrinho/:id', produtosController.inserirCarrinho);
+app.get('/lanches/addCarrinho/:id', lancheController.inserirCarrinho);
 
 app.get('/usuarios', usuariosController.usuarios);
 
@@ -95,6 +97,8 @@ app.get('/obrigada', obrigadaController.obrigada);
 app.get('/carrinho', acoesUserController.abrirCarrinho);
 
 app.get('/carrinho/excluir/:id', acoesUserController.excluirProduto);
+
+app.get('/lanches', lancheController.produtos);
 
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port} (Graças a Deus!)`);
