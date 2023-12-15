@@ -28,7 +28,7 @@
 /* Configuração de Cabeçalho */
 header {
 
-    padding-top: 2px;
+    padding-top: 50px;
     background: rgb(0, 0, 0);
     background: linear-gradient(145deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(79, 0, 0, 0.6) 36%, rgba(0, 8, 73, 0.6) 67%, rgba(0, 0, 0, 1) 100%);
     background-repeat: no-repeat;
@@ -38,18 +38,20 @@ header {
 
 /* Configuração de links do Header (HOME, SOBRE, LOGIN ETC...) */
 .menu-header {
-    right: 3%;
     bottom: 55px;
     float: right;
     position: relative;
     width: 60%;
     font-size: 20px;
-    align-items: center;
     color: white;
     text-decoration: none;
     float: right;
-    padding-left: 2px;
     margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    padding-top: 15px;
+    padding-left: 10px;
 }
 
 /* Corpo - Body */
@@ -58,11 +60,6 @@ body {
     background-color: black;
     background-repeat: no-repeat;
     color: white;
-}
-
-main {
-    border: 1px solid red;
-
 }
 
 /* Rodapé */

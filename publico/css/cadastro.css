@@ -71,7 +71,7 @@ input {
 }
 
 button {
-    background-color: black;
+    background-color: #333;
     color: #fff;
     padding: 10px;
     border: none;
@@ -82,4 +82,10 @@ button {
 
 button:hover {
     background-color: #818481;
+}
+
+#btnVoltar{
+    background-color: #818481;
+    width: 10%;
+    color: #fff;
 }

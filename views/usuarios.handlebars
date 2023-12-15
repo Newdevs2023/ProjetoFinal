@@ -2,23 +2,25 @@
 <link rel="stylesheet" href="css/contato.css">
 {{/section}}
 
+<h3>Tabela - Pessoas</h3>
+
 <table>
     <thead>
         <tr>
-            <th>ID</th>
-            <th>Lanche</th>
-            <th>Descrição</th>
-            <th>Preço</th>
-            <th></th>
+            <td>ID</td>
+            <td>Nome</td>
+            <td>Email</td>
+            <td>Senha</td>
+            <td></td>
         </tr>
     </thead>
 
     {{#each dados }}
         <tr>
             <td>{{id}}</td>
-            <td>{{lanche}}</td>
-            <td>{{descricao}}</td>
-            <td>{{preco}}</td>
+            <td>{{nome}}</td>
+            <td>{{email}}</td>
+            <td>{{senha}}</td>
             <td><a method="get" href="/produto/editar/{{id}}"><input type="button" value="editar"></a><a method="get" href="/produto/excluir/{{id}}"><input type="button" value="Excluir"></a></td>
         </tr>
     {{/each}}

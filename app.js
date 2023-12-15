@@ -15,6 +15,10 @@ const cadastroUserController = require('./controller/cadastroUser.controller');
 
 const produtosController = require('./controller/produtos.controller');
 
+const usuariosController = require('./controller/usuarios.controller');
+
+const pedidosController = require("./controller/pedidos.controller")
+
 const app = express();
 const port = 8080;
 
@@ -65,6 +69,10 @@ app.get('/cadastroUser', cadastroUserController.cadastroUser);
 app.post('/salvarContato', cadastroUserController.salvarContato);
 
 app.get('/produtos', produtosController.produtos);
+
+app.get('/usuarios', usuariosController.usuarios);
+
+app.get('/pedidos', pedidosController.pedidos);
 
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port} (Graças a Deus!)`);
