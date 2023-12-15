@@ -64,7 +64,7 @@ app.get('/cadastroUser', cadastroUserController.cadastroUser);
 
 app.post('/salvarContato', cadastroUserController.salvarContato);
 
-app.get('/produto', cadastroUserController.leitura);
+app.get('/produto', acoesUserController.acoesUser);
 
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port} (Graças a Deus!)`);
