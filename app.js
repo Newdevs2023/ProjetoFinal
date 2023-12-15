@@ -11,6 +11,8 @@ const acoesAdmController = require('./controller/acoesAdm.controller');
 
 const acoesUserController = require('./controller/acoesUser.controller');
 
+const obrigadaController = require('./controller/obrigada.controller');
+
 const cadastroUserController = require('./controller/cadastroUser.controller');
 
 const produtosController = require('./controller/produtos.controller');
@@ -18,6 +20,8 @@ const produtosController = require('./controller/produtos.controller');
 const usuariosController = require('./controller/usuarios.controller');
 
 const pedidosController = require("./controller/pedidos.controller")
+
+const pagamentoController = require ("./controller/pagamentos.controller");
 
 const app = express();
 const port = 8080;
@@ -48,8 +52,6 @@ app.get('/', homeController.home);
 
 app.get('/about', aboutController.about);
 
-app.get('/cadastro', acoesAdmController.cadastro);
-
 app.post('/salvarProduto', acoesAdmController.salvarProduto);
 
 app.get('/login', loginController.login);
@@ -57,6 +59,8 @@ app.get('/login', loginController.login);
 app.post('/loginEntrar', loginController.loginEntrar);
 
 app.get('/acoesAdm', acoesAdmController.acoesAdm);
+
+app.get('/cadastro', acoesAdmController.cadastro);
 
 app.get('/produto/excluir/:id', acoesAdmController.excluirProduto);
 
@@ -70,9 +74,27 @@ app.post('/salvarContato', cadastroUserController.salvarContato);
 
 app.get('/produtos', produtosController.produtos);
 
+app.get('/produtos/excluir/:id', produtosController.excluirProduto);
+
+app.post('/produtos/addCarrinho/:id', produtosController.inserirCarrinho);
+
 app.get('/usuarios', usuariosController.usuarios);
 
 app.get('/pedidos', pedidosController.pedidos);
+
+app.get('/usuarios/excluir/:id', usuariosController.excluirUsuario);
+
+app.get('/usuarios/editar/:id', usuariosController.editarUsuario);
+
+app.post('/usuarios/editar/salvaEdtUsuarios', usuariosController.salvaEdtUsuario);
+
+app.post('/pagamentos', pagamentoController.pagamentoCreate);
+
+app.get('/obrigada', obrigadaController.obrigada);
+
+app.get('/carrinho', acoesUserController.abrirCarrinho);
+
+app.get('/carrinho/excluir/:id', acoesUserController.excluirProduto);
 
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port} (Graças a Deus!)`);

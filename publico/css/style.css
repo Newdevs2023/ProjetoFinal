@@ -61,7 +61,7 @@ a:focus {
 
 /* Configuração de Cabeçalho */
 header {
-    padding-top: 380px;
+    padding-top: 40px;
     background-image: url('../img/imgFundo.png');
     background-size: cover;
     /* para cobrir todo o fundo */
@@ -70,7 +70,6 @@ header {
 
 /* Configuração de links do Header (HOME, SOBRE, LOGIN ETC...) */
 .menu-header {
-    top: -420px;
     float: right;
     position: relative;
     width: 60%;

@@ -1,7 +1,3 @@
-{{#section 'styles'}}
-<link rel="stylesheet" href="css/contato.css">
-{{/section}}
-
 <table>
     <thead>
         <tr>
@@ -17,9 +13,11 @@
             <td>{{lanche}}</td>
             <td>{{descricao}}</td>
             <td>{{preco}}</td>
-            <td><a method="get" href="/produtos/addCarrinho/{{id}}"><input type="button" value="addCarrinho"></a></td>
+            <td><a method="get" href="/carrinho/excluir/{{id}}"><input type="button" value="Excluir"></a></td>
         </tr>
     {{/each}}
 </table>
 
+<a method="get" href="/pagamentos"><input type="button" value="Finalizar Compra"></a>
 <a method="get" href="/"><input type="button" value="Voltar"></a>
+
