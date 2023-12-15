@@ -7,13 +7,47 @@
     box-sizing: border-box;
 }
 
+#titulo {
+    width: 100%;
+    top: -510px;
+    padding-left: 40%;
+    position: relative;
+
+}
+
+a {
+    color: aliceblue;
+    margin-left: 10%;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:active {
+    position: relative;
+    font-size: 120%;
+    outline: 2px solid blue;
+    outline-offset: 5px;
+    background-color: darkslategray;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+
+a:focus {
+    outline: 2px solid blue;
+    outline-offset: 5px;
+    background-color: darkslategray;
+}
+
 /* Configuração da Logo Header */
 .logo {
     position: relative;
-    top: 5px;
+    top: -360px;
     height: 25%;
     width: 25%;
-    left: 10%;
+    left: 7%;
 }
 
 #logo {
@@ -27,18 +61,16 @@
 
 /* Configuração de Cabeçalho */
 header {
-
-    padding-top: 50px;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(145deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(79, 0, 0, 0.6) 36%, rgba(0, 8, 73, 0.6) 67%, rgba(0, 0, 0, 1) 100%);
-    background-repeat: no-repeat;
+    padding-top: 380px;
+    background-image: url('../img/imgFundo.png');
     background-size: cover;
-    background-position: initial;
+    /* para cobrir todo o fundo */
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
 /* Configuração de links do Header (HOME, SOBRE, LOGIN ETC...) */
 .menu-header {
-    bottom: 55px;
+    top: -420px;
     float: right;
     position: relative;
     width: 60%;
@@ -49,9 +81,12 @@ header {
     margin-right: 50px;
     display: flex;
     justify-content: center;
-    align-items:end;
-    padding-top: 15px;
-    padding-left: 10px;
+    align-items: end;
+    padding-top: -50px;
+    padding-left: 130px;
+    text-shadow: 0 20px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid transparent;
+
 }
 
 /* Corpo - Body */
@@ -74,8 +109,15 @@ footer {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 0;
+    bottom: -150%;
     left: 0;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
+
+.geralAbout {
+    text-align: justify;
+    display: flex;
+    width: 80%;
+}
+
