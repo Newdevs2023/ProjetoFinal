@@ -19,9 +19,5 @@ const salvarContato = (req, res) => {
     res.redirect('/');
 }
 
-const leitura = (req, res) => {
-    let lanche = crud.read(filePath);
-    res.render('leitura', { dados: lanche });
-}
 
-module.exports = { cadastroUser, salvarContato, leitura };
+module.exports = { cadastroUser, salvarContato};
