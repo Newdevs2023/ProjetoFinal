@@ -7,31 +7,8 @@ const acoesAdm = (req, res) => {
     res.render('acoesAdm', { dados: lanche });
 }
 
-const excluirProduto = (req, res) => {
-    crud.delete(req.params.id, filePath)
-    res.redirect('/acoesAdm');
-}
-
-const editarProduto = (req, res) => {
-    let result = crud.selectItem(req.params.id, filePath);
-    console.log(result);
-    res.render('editarProduto',{data:result});
-}
-
-const salvaEdtProduto = (req, res) => {
-    let cliente = new Produto(req.body);
-    crud.read(filePath);
-    console.log(cliente);
-    crud.update(cliente, filePath);
-    res.redirect('/acoesAdm');
-}
-
-const cadastro = (req, res) => {
-    res.render('cadastro');
-}
-
 const salvarProduto = (req, res) => {
-    let cliente = new Produto(req.body);
+    let cliente = new Cliente(req.body);
     crud.read(filePath);
     cliente.id = crud.verificaId();
     if (cliente.id > 0) {
@@ -39,7 +16,12 @@ const salvarProduto = (req, res) => {
     }else{
         console.log('Ocorreu um erro!');
     }
-    res.redirect('/acoesAdm');
+    res.redirect('/');
 }
 
-module.exports = { acoesAdm, excluirProduto, editarProduto , salvaEdtProduto, cadastro, salvarProduto};  
+
+const cadastro = (req, res) => {
+    res.render('cadastro');
+}
+
+module.exports = { acoesAdm , cadastro, salvarProduto};  
