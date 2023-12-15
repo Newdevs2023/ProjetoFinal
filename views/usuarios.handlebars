@@ -1,29 +1,32 @@
 {{#section 'styles'}}
-<link rel="stylesheet" href="css/contato.css">
+<link rel="stylesheet" href="css/usuarios.css">
 {{/section}}
 
-<h3>Tabela - Pessoas</h3>
 
-<table>
+<div class="table">
+    <h3>Cadastros de Usuários</h3>
+    <table id="table">
     <thead>
         <tr>
-            <td>ID</td>
-            <td>Nome</td>
-            <td>Email</td>
-            <td>Senha</td>
-            <td></td>
+            <td class="id">ID</td>
+            <td class="nome">Nome</td>
+            <td class="email">Email</td>
+            <td class="senha">Senha</td>
+            <td class="edit"></td>
         </tr>
     </thead>
 
     {{#each dados }}
         <tr>
-            <td>{{id}}</td>
-            <td>{{nome}}</td>
-            <td>{{email}}</td>
-            <td>{{senha}}</td>
-            <td><a method="get" href="/produto/editar/{{id}}"><input type="button" value="editar"></a><a method="get" href="/produto/excluir/{{id}}"><input type="button" value="Excluir"></a></td>
+            <td class="id">{{id}}</td>
+            <td class="nome">{{nome}}</td>
+            <td class="email">{{email}}</td>
+            <td class="senha">{{senha}}</td>
+            <td class="edit"><a method="get" href="/produto/editar/{{id}}"><input class="button" id="editar" type="button" value="editar"></a><a method="get" href="/produto/excluir/{{id}}"><input type="button" class="button" id="excluir" value="Excluir"></a></td>
         </tr>
     {{/each}}
 </table>
+<a method="get" href="/acoesAdm"><input class="button" id="voltar" type="button" value="Voltar"></a>
+</div>
 
-<a method="get" href="/acoesAdm"><input type="button" value="Voltar"></a>
+
