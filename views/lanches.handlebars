@@ -1,0 +1,25 @@
+{{#section 'styles'}}
+<link rel="stylesheet" href="css/contato.css">
+{{/section}}
+
+<table>
+    <thead>
+        <tr>
+            <th>Lanche</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    {{#each dados }}
+        <tr>
+            <td>{{lanche}}</td>
+            <td>{{descricao}}</td>
+            <td>{{preco}}</td>
+            <td><a method="post" href="/lanches/addCarrinho/{{id}}"><input type="button" value="addCarrinho"></a></td>
+        </tr>
+    {{/each}}
+</table>
+
+<a method="get" href="/"><input type="button" value="Voltar"></a>
