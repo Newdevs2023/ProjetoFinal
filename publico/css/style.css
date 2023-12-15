@@ -10,10 +10,10 @@
 /* Configuração da Logo Header */
 .logo {
     position: relative;
-    bottom: 370px;
+    top: 5px;
     height: 25%;
     width: 25%;
-    left: 6%;
+    left: 10%;
 }
 
 #logo {
@@ -27,29 +27,21 @@
 
 /* Configuração de Cabeçalho */
 header {
-    padding-top: 30%;
+    height: 20%;
     background: rgb(0, 0, 0);
     background: linear-gradient(145deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(79, 0, 0, 0.6) 36%, rgba(0, 8, 73, 0.6) 67%, rgba(0, 0, 0, 1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: initial;
-    border-bottom: 1px solid red;
 }
 
 /* Configuração de links do Header (HOME, SOBRE, LOGIN ETC...) */
 .menu-header {
     right: 3%;
-    bottom: 40px;
+    bottom: 55px;
     float: right;
     position: relative;
     width: 60%;
-
-}
-
-header{ 
-    background-image: url('../img/family.png');
-    background-size: cover; /* para cobrir todo o fundo */
-    background-attachment: fixed; /* para manter a imagem fixa enquanto a página rola */
 }
 
 .menu-header a {
@@ -58,7 +50,7 @@ header{
     color: white;
     text-decoration: none;
     float: right;
-    padding-left: 1px;
+    padding-left: 2px;
     margin-right: 50px;
 }
 
@@ -70,6 +62,10 @@ body {
     color: white;
 }
 
+main {
+    border: 1px solid red;
+
+}
 
 /* Rodapé */
 footer {
