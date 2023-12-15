@@ -18,11 +18,11 @@
 
     {{#each dados }}
         <tr>
-            <td class="id">{{id}}</td>
-            <td class="nome">{{nome}}</td>
-            <td class="email">{{email}}</td>
-            <td class="senha">{{senha}}</td>
-            <td class="edit"><a method="get" href="/produto/editar/{{id}}"><input class="button" id="editar" type="button" value="editar"></a><a method="get" href="/produto/excluir/{{id}}"><input type="button" class="button" id="excluir" value="Excluir"></a></td>
+            <td>{{id}}</td>
+            <td>{{nome}}</td>
+            <td>{{email}}</td>
+            <td>{{senha}}</td>
+            <td><a method="get" href="/usuarios/editar/{{id}}"><input type="button" value="editar"></a><a method="get" href="/usuarios/excluir/{{id}}"><input type="button" value="Excluir"></a></td>
         </tr>
     {{/each}}
 </table>
