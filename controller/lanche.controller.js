@@ -17,7 +17,7 @@ const inserirCarrinho = (req, res) => {
     } else {
         console.log('Ocorreu um erro!');
     }
-    res.render('/lanches');
+    res.redirect('/lanches');
 }
 
 module.exports={produtos,inserirCarrinho};

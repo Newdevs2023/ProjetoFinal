@@ -11,7 +11,7 @@ const abrirCarrinho = (req, res) => {
 
 const excluirProduto = (req, res) => {
     crud.delete(req.params.id, filePath)
-    res.redirect('/acoesUser');
+    res.redirect('/carrinho');
 }
 
 

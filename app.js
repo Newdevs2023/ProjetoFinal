@@ -100,6 +100,10 @@ app.get('/carrinho/excluir/:id', acoesUserController.excluirProduto);
 
 app.get('/lanches', lancheController.produtos);
 
+app.get('/pagamentos', pagamentoController.pagamento);
+
+app.get('/obrigada', obrigadaController.obrigada);
+
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port} (Graças a Deus!)`);
 });
