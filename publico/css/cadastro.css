@@ -23,22 +23,18 @@ table{
 }
 
 table td {
-    border: 1px solid black;
+   
     white-space: nowrap;
 }
 
 /* ==================== Formatação do Formulário =======================*/
 
-/* body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-} */
+body{
+    background-image: url('../img/imgFundo3.png');
+    width: 100%;
+    background-size: cover; 
+    margin-bottom: 30%;
+  }
 
 form {
     margin-top: 12px;
