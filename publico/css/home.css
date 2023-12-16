@@ -10,6 +10,7 @@
 /* Estilos para o layout básico */
 body{
   background-image: url('../img/imgFundo.png');
+  width: 80%;
   background-size: cover; 
   margin-bottom: 30%;
 }
