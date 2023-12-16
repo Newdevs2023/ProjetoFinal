@@ -2,15 +2,15 @@
 <link rel="stylesheet" href="css/login.css" />
 {{/section}}
 
-<h1>Login</h1>
+<div class="pg-login">
+  <h1>Login</h1>
 
-<br /><br />
-<form action="loginEntrar" method="post">
-  <input type="text" name="usuario" placeholder="Digite seu usuario" />
-  <input type="password" name="senha" placeholder="Digite sua senha" />
-  <button type="submit" name="entrar">entrar</button>
-
-</form>
-<br><br>
-<h4>Não possui cadastro?</h4><br>
-<a href="/cadastroUser"><input id="cadastre" type="button" name="cadastrese" value="Cadastre-se" /></a>
+  <form action="loginEntrar" method="post">
+    <input type="text" name="usuario" placeholder="Digite seu usuario" />
+    <input type="password" name="senha" placeholder="Digite sua senha" />
+    <button type="submit" name="entrar">Entrar</button>
+  </form>
+  
+  <h4>Não possui cadastro?</h4><br>
+  <a href="/cadastroUser"><input id="cadastre" type="button" name="cadastrese" value="Cadastre-se" /></a>
+</div>

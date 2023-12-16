@@ -1,76 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-* {
+*{
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
-.container {
+/* Titulo Login */
+h1 {
+  font-size: 1.8rem;
+  margin: 1rem 1rem ;
+  text-align: center;
+}
+
+/* Container Login */
+.pg-login {
+  float: left;
+  border: 1px solid white;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  text-align: center;
   align-items: center;
-  border: 2px solid #000;
-  padding: 20px;
-  
+  justify-content: center;
+  width: 100vh;
 }
 
-
-
-main {
-  padding: 10vh;
-  margin: auto ;
-  text-align: center;
-  
-}
-
-h1 {
-  font-size: 2.5em;
-  color: white;
-}
-
-h2 {
-  font-size: 1.5em;
-  color: white;
-}
-
-
-
-table,tr,td,th{
-  border: 1px solid black;
-  border-collapse: collapse;
-  position: relative;
-  padding: 30px;
-  text-align: center;
- 
-}
-
-/* FORMULARIO */
+/* ================== FORMULÁRIO ================*/
   
 form {
-  margin-top: 12px;
-  margin-left: 38%;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
 }
-
-h2 {
-  text-align: center;
-  color: #333;
-}
-
-label {
-  display: block;
-  margin: 10px 0 5px;
-  color: #555;
-}
-
 input {
   width: 100%;
   padding: 8px;
@@ -88,18 +52,21 @@ button {
   border-radius: 4px;
   cursor: pointer;
   width: 100%;
+  font-size: 1rem;
 }
 
 button:hover {
-  background-color: #818481;
+  background-color: #353735;
 }
 
 h4{
   color: #fff;
-  margin-top: -10px;
+  margin-top: 2rem;
 }
 
 #cadastre{
-  margin-right: 7.5%;
-  width: 25%;
+  text-align: center;
+  margin-right: 50px;
+  width: 110px;
 }
+
