@@ -2,8 +2,6 @@
 
 * {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -17,7 +15,7 @@
 
 a {
     color: aliceblue;
-    margin-left: 5%;
+    padding-left: 1%;
     text-decoration: none;
     border-radius: 5px;
     margin-top: -15%;
@@ -42,10 +40,14 @@ a:focus {
     background-color: darkslategray;
 }
 
+.homeSeta{
+    width: 100%;
+}
+
 /* Configuração da Logo Header */
 .logo {
     position: relative;
-    
+    margin-top: 0.5%;
     height: 25%;
     width: 20%;
     left: 7%;
@@ -62,7 +64,7 @@ a:focus {
 
 /* Configuração de Cabeçalho */
 header {
-    padding-top: 30px;
+    padding-top: 0px;
     background: rgb(0, 0, 0);
     background: linear-gradient(145deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(79, 0, 0, 0.6) 36%, rgba(0, 8, 73, 0.6) 67%, rgba(0, 0, 0, 1) 100%);
     height: 10%;
@@ -71,21 +73,25 @@ header {
 
 /* Configuração de links do Header (HOME, SOBRE, LOGIN ETC...) */
 .menu-header {
-    
-    
-    width: 60%;
+  
+    margin-top: -30px;
     font-size: 20px;
     color: white;
     text-decoration: none;
-    
-    margin-right: 20px;
+
     display: flex;
     justify-content: center;
     align-items: end;
-    padding-top: -10px;
-    padding-left: 10px;
+   
+    padding-left: 240px;
     text-shadow: 0 20px 5px rgba(0, 0, 0, 0.1);
     margin-left: 45%;
+
+}
+
+.homeSeta{
+    padding-left: 10px;
+    display: flex;
     
 }
 
