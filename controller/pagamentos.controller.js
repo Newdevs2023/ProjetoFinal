@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
 const pagamento = (req, res) => {
-    res.render('pagamento');
+    res.render('pagamentos');
 };
 
 const pagamentoCreate = (req, res) => {
