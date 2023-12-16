@@ -1,0 +1,25 @@
+{{#section 'styles'}}
+<link rel="stylesheet" href="css/cadastro.css">
+{{/section}}
+
+<h1>Edição de Usuario</h1>
+
+<form action="salvaEdtUser" method="post">
+
+        <label for="id">id </label>
+        <input type="text" id="id" name="id" value="{{data.id}}" readonly>
+        <!-- Campo Nome -->
+        <label for="nome">Nome </label>
+        <input type="text" id="nome" name="nome" value="{{data.nome}}" required>
+
+        <!-- email -->
+        <label for="email">email:</label>
+        <input type="text" id="email" name="email" value="{{data.email}}" required>
+
+        <!-- Preço -->
+        <label for="senha">senha</label>
+        <input type="text" id="senha" name="senha" value="{{data.senha}}" required>
+
+        <!-- Botão de Cadastro -->
+        <button>Editar</button>
+    </form>
