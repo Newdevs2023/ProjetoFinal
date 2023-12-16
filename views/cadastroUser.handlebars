@@ -1,18 +1,21 @@
 {{#section 'styles'}}
-<link rel="stylesheet" href="css/contato.css">
+<link rel="stylesheet" href="css/login.css">
 {{/section}}
 
 <h1>Cadastro</h1>
+<div class="container">
+    <div class="formulario">
+        <form class="contato" action="salvarContato" method="post">
+            <label for="Nome">Nome</label>
+            <input class="input" name="nome" type="text">
 
-<form class="contato" action="salvarContato" method="post">
-    <label for="Nome">Nome</label>
-    <input class="input" name="nome" type="text">
+            <label for="email">Email</label>
+            <input class="input" name="email" type="email">
 
-    <label for="email">Email</label>
-    <input class="input" name="email" type="email">
+            <label for="senha">Senha</label>
+            <input class="input" name="senha" type="password">
 
-    <label for="senha">Senha</label>
-    <input class="input" name="senha" type="password">
-
-    <button>Cadastrar</button>
-</form>
+            <button>Cadastrar</button>
+        </form>
+    </div>
+</div>
