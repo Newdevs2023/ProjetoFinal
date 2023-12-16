@@ -10,7 +10,61 @@
 /* Estilos para o layout básico */
 body{
   background-image: url('../img/imgFundo.png');
-  width: 80%;
+  width: 90%;
   background-size: cover; 
   margin-bottom: 30%;
+}
+
+/* Define algumas variáveis CSS */
+:root {
+  --red:#9f0202b9 ;/* Cor vermelha */
+  --white: #fff;/* Cor branca */
+  --dark: #1e1c2a;/* Cor escura */
+}
+
+
+/* Estilo para a classe CSS 'home-text' */
+
+.home-text {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.home-text h4 {
+
+  /* Tamanho da fonte 1,5rem, cor vermelha, margem 1rem */
+  font-size: 1.5rem;
+  color: var(--red);
+  margin-bottom: 1rem;
+}
+
+.home-text p {
+  margin-bottom: 1rem;
+  margin-top: 60px;
+}
+
+.home-btn {
+  display: inline-block;
+  /* display: bloco embutido */
+  padding: 15px 45px;
+  /* preenchimento: 15px 45px */
+  background: var(--red);
+  /* plano de fundo: var(--vermelho) */
+  color: var(--white);
+  /* cor: var(--branco) */
+  border-radius: 10px;
+  /* raio da borda: 10px */
+  font-weight: 700;
+  /* peso da fonte: 700 */
+  transition: all 0.5s;
+  /* transição: todos os 0,5s */
+  text-decoration: none;
+  /* decoração de texto: nenhum */
+
+  margin-left: 100px;
+  
+}
+
+.home-btn:hover {
+  background: #000000;
 }
