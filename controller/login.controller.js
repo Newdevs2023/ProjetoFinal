@@ -8,7 +8,6 @@ const login = (req, res) => {
     res.render('login');
 }
 
-
 const loginEntrar = (req, res) => {
 
     const { usuario, senha } = req.body;
