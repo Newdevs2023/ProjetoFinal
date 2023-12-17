@@ -50,7 +50,8 @@ const crud = {
         this.myData.pull(obj);
         
         fs.writeFileSync(filePath, JSON.stringify(crud.myData), { encoding: 'utf-8' });
-    }
+    },
+
 }
 
 module.exports = crud;
