@@ -10,7 +10,6 @@ body{
     background-image: url('../img/menu.jpeg');
     width: 100%;
     background-size: cover; 
-    margin-bottom: 30%;
   }
 
   table {
@@ -20,6 +19,7 @@ body{
     width: auto;
     height: 0 auto;
     justify-content: center;
+    margin-left: 220px;
 }
 
 h1{
