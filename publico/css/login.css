@@ -45,6 +45,12 @@ input {
   border-radius: 4px;
 }
 
+#btn-user{
+  --red:#ffc400b9 ;/* Cor vermelha */
+  --white: #fff;/* Cor branca */
+  --dark: #1e1c2a;/* Cor escura */
+}
+
 button {
   background-color: black;
   color: #fff;
@@ -67,8 +73,11 @@ h4{
 
 #cadastre{
   text-align: center;
-  margin-right: 50px;
+  margin-right: 100px;
+  margin-left: 30%;
   width: 110px;
+  background-color:#000000b9;
+  color: #fff;
 }
 
 .container {

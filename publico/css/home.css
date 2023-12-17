@@ -15,9 +15,14 @@ body{
  
 }
 
+.botao-aolado{
+  display: flex;
+ 
+}
+
 /* Define algumas variáveis CSS */
 :root {
-  --red:#9f0202b9 ;/* Cor vermelha */
+  --red:#ffc400b9 ;/* Cor vermelha */
   --white: #fff;/* Cor branca */
   --dark: #1e1c2a;/* Cor escura */
 }
@@ -28,6 +33,7 @@ body{
 .home-text {
   margin-left: 100px;
   margin-top: 50px;
+  
 }
 
 .home-text h4 {
@@ -41,6 +47,10 @@ body{
 .home-text p {
   margin-bottom: 1rem;
   margin-top: 60px;
+}
+
+#btn-cadastre{
+  margin-left: 37%;
 }
 
 .home-btn {

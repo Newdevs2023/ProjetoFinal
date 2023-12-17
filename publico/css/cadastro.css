@@ -18,7 +18,7 @@
 
 
 table{
-    margin-top:1%;
+    margin-top: 10%;
     margin-left: 35%;
 }
 
@@ -30,7 +30,7 @@ table td {
 /* ==================== Formatação do Formulário =======================*/
 
 body{
-    background-image: url('../img/imgFundo3.png');
+    background-image: url('../img/menu.jpeg');
     width: 100%;
     background-size: cover; 
     margin-bottom: 30%;
