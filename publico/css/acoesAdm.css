@@ -1,0 +1,24 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url('../img/imgFundoAdm.png');
+    width: 100%;
+    background-size: cover; 
+    margin-bottom: 30%;
+  }
+
+  .acoesAdmin{
+    margin-left: 29.8%;
+  }
+
+input{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 5px;
+    width: 100px;
+  }

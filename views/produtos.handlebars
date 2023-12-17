@@ -2,25 +2,32 @@
 <link rel="stylesheet" href="css/contato.css">
 {{/section}}
 
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th class="lanche">Lanche</th>
-            <th class="descricao">Descrição</th>
-            <th class="preco">Preço</th>
-            <th class="add"></th>
-        </tr>
-    </thead>
+<div class="table">
+    <h1>Cadastros de Produtos</h1>
+    <br><br>
+    <table id="table" border="2">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th class="lanche">Lanche</th>
+                <th class="descricao">Descrição</th>
+                <th class="preco">Preço</th>
+                <th class="add"></th>
+            </tr>
+        </thead>
 
-    {{#each dados }}
+        {{#each dados }}
         <tr>
             <td class="lanche">{{lanche}}</td>
             <td class="descricao">{{descricao}}</td>
             <td class="preco">{{preco}}</td>
-            <td><a method="get" href="/produtos/editar/{{id}}"><input type="button" value="editar"></a><a method="get" href="/produtos/excluir/{{id}}"><input type="button" value="Excluir"></a></td>
+            <td><a method="get" href="/produtos/editar/{{id}}"><input type="button" value="editar"></a><a method="get"
+                    href="/produtos/excluir/{{id}}"><input type="button" value="Excluir"></a></td>
         </tr>
-    {{/each}}
-</table>
+        {{/each}}
+    </table>
 
-<a method="get" href="/acoesAdm"><input type="button" class="button" id="voltar" value="Voltar"></a>
+    <a method="get" href="/acoesAdm"><input type="button" class="button" id="voltar" value="Voltar"></a>
+
+
+</div>
