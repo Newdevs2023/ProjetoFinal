@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* Estilos para o layout básico */
+body{
+  background-image: url('../img/imgFundo.png');
+  width: 100%;
+  background-size: cover; 
+
+}
+
+.container{
+    margin-left: 25%;
+    margin-top: 7%;
+}
+
+.container2{
+    margin-left: 4%;
+    color: #ffc400b9;
+}
