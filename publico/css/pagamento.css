@@ -10,6 +10,18 @@
     text-transform: capitalize;
 }
 
+footer{
+    margin-top: 11%;
+}
+
+
+body{
+    background-image: url('../img/menu.jpeg');
+    width: 100%;
+    background-size: cover; 
+  }
+
+
 .container {
     display: flex;
     justify-content: center;

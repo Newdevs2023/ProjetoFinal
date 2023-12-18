@@ -1,5 +1,5 @@
 {{#section 'styles'}}
-<link rel="stylesheet" href="css/cadastro.css">
+<link rel="stylesheet" href="css/carrinho.css">
 {{/section}}
 
 <div class="container">
@@ -21,10 +21,10 @@
             <td><a method="get" href="/carrinho/excluir/{{id}}">X</a></td>
         </tr>
         {{/each}}
-    </table>
+    </table><br><br>
 
     {{!-- <a method="get" href="/carrinho/valorTotal"><input type="button" value="Calcular Total"></a>
     <a method="get" href="/carrinho/calcularDesconto"><input type="button" value="Calcular Desconto"></a> --}}
-    <a method="get" href="/pagamentos"><input type="button" value="Finalizar Compra"></a>
+    <a method="get" href="/pagamentos"><input type="button" value="Finalizar Compra"></a><br><br>
     <a method="get" href="/"><input type="button" value="Voltar"></a>
 </div>
