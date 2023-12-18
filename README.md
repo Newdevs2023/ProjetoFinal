@@ -79,3 +79,7 @@ O código-fonte do projeto está disponível neste [repositório Git](https://gi
 - [Giovana Rocha](https://www.linkedin.com/in/giovanna-rocha-650575260/)
 - [Jackson Santos](https://www.linkedin.com/in/jacksonhenriqueapsantos/)
 - [Vinicius Fidelis]()
+
+**Nota de Esclarecimentos**
+- A função de "calcularDesconto" e "valorFinal" não funcionam por isso estão comentadas;
+- Tentamos ao meximo cumprir com a sprint e esse foi o que conseguimos fazer =);
