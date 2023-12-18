@@ -74,6 +74,7 @@ Para executar a aplicação:
 O código-fonte do projeto está disponível neste [repositório Git](https://github.com/Newdevs2023/ProjetoFinal). Para mais informações sobre a implementação, consulte a documentação presente no código.
 
 **Autores**
+- [Nicollas Tavares](https://www.linkedin.com/in/nicollas-tavares-da-silva-a54318271/)
 - [Denilson Araujo](https://www.linkedin.com/in/denilson-araujo-686aa9168/)
 - [Gabriel Pantalhão](https://www.linkedin.com/in/gabriel-pantalh%C3%A3o-758ab625b/)
 - [Giovana Rocha](https://www.linkedin.com/in/giovanna-rocha-650575260/)
