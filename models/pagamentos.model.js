@@ -1,6 +1,10 @@
-class Pagamentos {
+const Compras = require("./Carrinho.model");
+
+class Pagamentos extends Compras{
     
-    constructor(body) {
+    constructor(body, total, descontoAplicado) {
+        super (total, descontoAplicado)
+        this.total = total
         this.id = body.id
         this.nome = body.nome;
         this.email = body.email;

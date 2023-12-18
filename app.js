@@ -19,9 +19,9 @@ const usuariosController = require('./controller/usuarios.controller');
 
 const pedidosController = require("./controller/pedidos.controller")
 
-const pagamentoController = require ("./controller/pagamentos.controller");
+const pagamentoController = require("./controller/pagamentos.controller");
 
-const lancheController = require ("./controller/lanche.controller");
+const lancheController = require("./controller/lanche.controller");
 
 const app = express();
 const port = 8080;
@@ -91,6 +91,10 @@ app.post('/pagamentos', pagamentoController.pagamentoCreate);
 app.get('/obrigada', obrigadaController.obrigada);
 
 app.get('/carrinho', acoesUserController.abrirCarrinho);
+
+app.get('/carrinho/pTotal', acoesUserController.calcularValorTotal);
+
+app.get('/carrinho/aplicarDesconto', acoesUserController.aplicarDesconto);
 
 app.get('/carrinho/excluir/:id', acoesUserController.excluirProduto);
 
