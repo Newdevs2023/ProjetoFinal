@@ -16,7 +16,7 @@ const pagamento = (req, res) => {
 const pagamentoCreate = (req, res) => {
     let pagamento = new Pagamentos(req.body);
     crud.read(filePath);
-    pagamento.id = crud.verificaId();
+    // pagamento.id = crud.verificaId();
     crud.create(pagamento, filePath);
     res.redirect('/obrigada');
 };

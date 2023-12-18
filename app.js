@@ -92,9 +92,9 @@ app.get('/obrigada', obrigadaController.obrigada);
 
 app.get('/carrinho', acoesUserController.abrirCarrinho);
 
-app.get('/carrinho/pTotal', acoesUserController.calcularValorTotal);
+app.get('/carrinho/valorTotal', acoesUserController.valorTotal);
 
-app.get('/carrinho/aplicarDesconto', acoesUserController.aplicarDesconto);
+app.get('/carrinho/calcularDesconto', acoesUserController.calcularDesconto);
 
 app.get('/carrinho/excluir/:id', acoesUserController.excluirProduto);
 

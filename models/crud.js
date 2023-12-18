@@ -52,6 +52,17 @@ const crud = {
         fs.writeFileSync(filePath, JSON.stringify(crud.myData), { encoding: 'utf-8' });
     },
 
+    calcularValorTotal (...preco) {
+        let index = this.myData.findIndex(c => c.preco == obj.preco);
+        if (index != -1) {
+            crud.myData[index] = obj;
+            preco= preco++
+            fs.writeFileSync(filePath, JSON.stringify(crud.myData), { encoding: 'utf-8' });
+        } else {
+            console.log('Registro não localizado.')
+        }
+    }
+      
 }
 
 module.exports = crud;

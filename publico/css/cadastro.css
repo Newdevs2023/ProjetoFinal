@@ -33,7 +33,6 @@ body{
     background-image: url('../img/menu.jpeg');
     width: 100%;
     background-size: cover; 
-    margin-bottom: 30%;
   }
 
 form {
@@ -84,4 +83,8 @@ button:hover {
     background-color: #818481;
     width: 10%;
     color: #fff;
+}
+
+.conteiner{
+    width: 30%;
 }
